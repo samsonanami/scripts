@@ -1,0 +1,6 @@
+def remove_duplicates(string):
+    unique = ''.join(sorted(set(string)))
+    removed = len(string) - len (unique)
+    return string,len(string), unique, len(unique), removed
+
+print remove_duplicates('thisisateststring')

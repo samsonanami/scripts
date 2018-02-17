@@ -1,0 +1,16 @@
+#!/usr/bin/python
+def is_isogram (word):
+	if type(word) != str:
+		raise TypeError("Input should be a string")
+	elif word == " ":
+		return word, False
+	else:
+		for letter in word:
+			if word.count(letter)>1:
+				return word,False
+			else:
+				return word, True
+
+print is_isogram("abolishment")
+
+print is_isogram("samsonanami")

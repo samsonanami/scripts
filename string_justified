@@ -1,0 +1,9 @@
+#!/usr/bin/python
+str = "this is string example....wow!!!";
+
+print str.ljust(50, '0');
+
+str2 = "this is string example....wow!!!";
+print str2.lstrip();
+str2 = "88888888this is string example....wow!!!8888888";
+print str2.lstrip('8');

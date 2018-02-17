@@ -1,0 +1,19 @@
+#!/usr/bin/python
+
+class Reverse:
+"Iterator for looping over a sequence backwards"
+def __init__(self, data):
+self.data = data
+An iterator is
+self.index = len(data)
+any object with
+def next(self):
+"next" method
+if self.index == 0:
+raise StopIteration
+self.index = self.index - 1
+return self.data[self.index]
+def __iter__(self):
+return self
+>>> for char in Reverse('spam'):
+print char
